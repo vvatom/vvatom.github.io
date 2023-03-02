@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.073c9b0a.css",
-    "main.js": "/react-gh-pages/static/js/main.2f044712.js",
-    "static/js/787.a5fa54f9.chunk.js": "/react-gh-pages/static/js/787.a5fa54f9.chunk.js",
-    "index.html": "/react-gh-pages/index.html",
-    "main.073c9b0a.css.map": "/react-gh-pages/static/css/main.073c9b0a.css.map",
-    "main.2f044712.js.map": "/react-gh-pages/static/js/main.2f044712.js.map",
-    "787.a5fa54f9.chunk.js.map": "/react-gh-pages/static/js/787.a5fa54f9.chunk.js.map"
+    "main.css": "/vvatom.github.io/vvatom.github.io/static/css/main.073c9b0a.css",
+    "main.js": "/vvatom.github.io/vvatom.github.io/static/js/main.98e2472d.js",
+    "static/js/787.a5fa54f9.chunk.js": "/vvatom.github.io/vvatom.github.io/static/js/787.a5fa54f9.chunk.js",
+    "index.html": "/vvatom.github.io/vvatom.github.io/index.html",
+    "main.073c9b0a.css.map": "/vvatom.github.io/vvatom.github.io/static/css/main.073c9b0a.css.map",
+    "main.98e2472d.js.map": "/vvatom.github.io/vvatom.github.io/static/js/main.98e2472d.js.map",
+    "787.a5fa54f9.chunk.js.map": "/vvatom.github.io/vvatom.github.io/static/js/787.a5fa54f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.2f044712.js"
+    "static/js/main.98e2472d.js"
   ]
 }
