@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/vvatom.github.io/vvatom.github.io/static/css/main.073c9b0a.css",
-    "main.js": "/vvatom.github.io/vvatom.github.io/static/js/main.98e2472d.js",
-    "static/js/787.a5fa54f9.chunk.js": "/vvatom.github.io/vvatom.github.io/static/js/787.a5fa54f9.chunk.js",
-    "index.html": "/vvatom.github.io/vvatom.github.io/index.html",
-    "main.073c9b0a.css.map": "/vvatom.github.io/vvatom.github.io/static/css/main.073c9b0a.css.map",
-    "main.98e2472d.js.map": "/vvatom.github.io/vvatom.github.io/static/js/main.98e2472d.js.map",
-    "787.a5fa54f9.chunk.js.map": "/vvatom.github.io/vvatom.github.io/static/js/787.a5fa54f9.chunk.js.map"
+    "main.css": "/static/css/main.073c9b0a.css",
+    "main.js": "/static/js/main.b5bddb85.js",
+    "static/js/787.4aafeef4.chunk.js": "/static/js/787.4aafeef4.chunk.js",
+    "index.html": "/index.html",
+    "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
+    "main.b5bddb85.js.map": "/static/js/main.b5bddb85.js.map",
+    "787.4aafeef4.chunk.js.map": "/static/js/787.4aafeef4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.98e2472d.js"
+    "static/js/main.b5bddb85.js"
   ]
 }
