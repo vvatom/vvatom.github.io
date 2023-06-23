@@ -32,7 +32,10 @@ function App() {
       <span className='circle__purple--anim circle__purple--blur_4'></span>
       <span className='circle__purple--anim circle__purple--white_ray'></span>
       </div>
+      
       <div className='circle__photo'></div>
+      <div className='photo'></div>
+
       <div className='triangle_bottom'>
         <span className='triangle_bottom--anim'></span>
         <span className='triangle_bottom--anim_reverse'></span>

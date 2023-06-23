@@ -230,8 +230,22 @@ filter: blur(4px);
   position: absolute;
   height:30px;
   width:800px;
-  background: linear-gradient(to left,black,rgb(204, 0, 255),black);
+  background: linear-gradient(to right,black,transparent, black);
   overflow: hidden;
+  animation: background_color 12s linear infinite
+}
+
+@keyframes background_color {
+  0%{
+    background-color: magenta;
+  }
+  50%{
+    background-color: blue;
+  }
+  100%{
+    background-color: magenta;
+  }
+  
 }
 
 .triangle_bottom--anim{
@@ -282,4 +296,15 @@ filter: blur(4px);
   justify-content: center;
   align-items: center;
   position: absolute;
+}
+
+.photo{
+  margin-left: 83px;
+  margin-bottom: 88px;
+  position:absolute;
+  width: 100%;
+  height: 660px;
+  background-image: url("assets/face.png");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
