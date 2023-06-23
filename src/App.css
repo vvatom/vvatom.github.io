@@ -37,8 +37,8 @@ filter: blur(4px);
 
 .circle__blue--white_ray{
   background-image: conic-gradient(transparent 3%,transparent,white);
-  width: 590px;
-  height: 590px;
+  width: 598px;
+  height: 598px;
   filter: blur(2px);
 }
 
@@ -72,8 +72,8 @@ filter: blur(4px);
 
 .circle__purple--white_ray{
   background-image: conic-gradient(transparent 3%,transparent,white);
-  width: 590px;
-  height: 590px;
+  width: 598px;
+  height: 598px;
   filter: blur(2px);
 }
 
@@ -101,14 +101,185 @@ filter: blur(4px);
   position: absolute;
   width: 150vw;
   height: 150vw;
-  mix-blend-mode: soft-light;;
-  background-image: conic-gradient(black,#f82fab,black,#0051ff,black);
+  mix-blend-mode: soft-light;
+  background-image: conic-gradient(black,black,#00d9ff,black,black,#f12ff8,black);
   animation: rotate 12s linear infinite;
+  animation-delay: 5s;
+
 }
 
 .circle__eclipse{
   position: absolute;
   width: 100vw;
   height: 100vh;
-  background: radial-gradient(closest-side, transparent, transparent,black);
+  background: radial-gradient(closest-side,transparent,transparent, transparent,black);
+}
+
+.triangle_left{
+  position: relative;
+  clip-path: polygon(0 0, 100% 6.5%, 100% 93.5%, 0 100%);
+  margin-bottom: 220px;
+  margin-right: 374px;
+  position: absolute;
+  height:800px;
+  width:30px;
+  background: linear-gradient(black, blue,black);
+  transform: rotate(30deg);
+  overflow: hidden;
+}
+
+.triangle_left--anim{
+  position: absolute;
+  display: block;
+  height:100%;
+  width:100%;
+  filter: blur(10px);
+  border-radius: 100px;
+  background: linear-gradient(to top, white, transparent);
+  animation: anim_three 12s linear infinite;
+}
+
+@keyframes anim_three {
+  0%{
+    transform: translateY(-100%)
+  }
+  100%{
+    transform: translateY(100%)
+  }
+}
+
+.triangle_left--anim_reverse{
+  position: absolute;
+  display: block;
+  height:100%;
+  width:100%;
+  border-radius: 100px;
+  filter: blur(10px);
+  background: linear-gradient(to top, transparent, white);
+  animation: anim_three_reverse 12s linear infinite;
+}
+
+@keyframes anim_three_reverse {
+  0%{
+    transform: translateY(100%)
+  }
+  100%{
+    transform: translateY(-100%)
+  }
+}
+
+.triangle_right{
+  position: relative;
+  clip-path: polygon(0 6.5%, 100% 0, 100% 100%, 0 93.5%);
+  margin-bottom: 220px;
+  margin-left: 374px;
+  position: absolute;
+  height:800px;
+  width:30px;
+  background: linear-gradient(black, magenta,black);
+  transform: rotate(-30deg);
+  overflow: hidden;
+}
+
+.triangle_right--anim{
+  position: absolute;
+  display: block;
+  height:100%;
+  width:100%;
+  border-radius: 100px;
+  filter: blur(10px);
+  background: linear-gradient(to bottom, transparent, white);
+  animation: anim_two 12s linear infinite;
+
+}
+
+@keyframes anim_two {
+  0%{
+    transform: translateY(-100%)
+  }
+  100%{
+    transform: translateY(100%)
+  }
+}
+
+.triangle_right--anim_reverse{
+  position: absolute;
+  display: block;
+  height:100%;
+  width:100%;
+  border-radius: 100px;
+  filter: blur(10px);
+  background: linear-gradient(to bottom, white, transparent);
+  animation: anim_two_reverse 12s linear infinite;
+
+}
+
+@keyframes anim_two_reverse {
+  0%{
+    transform: translateY(100%)
+  }
+  100%{
+    transform: translateY(-100%)
+  }
+}
+
+.triangle_bottom{
+  position: relative;
+  clip-path: polygon(6.5% 0, 93.5% 0, 100% 100%, 0 100%);
+  margin-top:428px;
+  position: absolute;
+  height:30px;
+  width:800px;
+  background: linear-gradient(to left,black,rgb(204, 0, 255),black);
+  overflow: hidden;
+}
+
+.triangle_bottom--anim{
+  position:absolute;
+  display: block;
+  height:100%;
+  width:100%;
+  border-radius: 100px;
+  filter: blur(10px);
+  background: linear-gradient(to left, white, transparent);
+  animation: anim_one 12s linear infinite;
+  animation-delay: 6s;
+}
+
+@keyframes anim_one {
+  0%{
+    transform: translateX(-100%)
+  }
+  100%{
+    transform: translateX(100%)
+  }
+}
+
+.triangle_bottom--anim_reverse{
+  position:absolute;
+  display: block;
+  height:100%;
+  width:100%;
+  border-radius: 100px;
+  filter: blur(10px);
+  background: linear-gradient(to left, transparent, white);
+  animation: anim_one_reverse 12s linear infinite;
+  animation-delay: 6s;
+}
+
+@keyframes anim_one_reverse {
+  0%{
+    transform: translateX(100%)
+  }
+  100%{
+    transform: translateX(-100%)
+  }
+}
+
+.front{
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
 }
