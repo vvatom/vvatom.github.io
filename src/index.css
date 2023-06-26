@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Mr+Dafoe&family=Six+Caps&display=swap');
+/*
+font-family: 'Mr Dafoe', cursive;
+font-family: 'Six Caps', sans-serif;
+*/
+
 .root{
   display: flex;
   justify-content: center;
@@ -23,7 +29,8 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url("assets/palmy.png");
+  background-image: url("assets/palm/palms.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  overflow-x: hidden;
 }
