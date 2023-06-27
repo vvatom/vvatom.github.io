@@ -100,8 +100,8 @@
 
 .circle__light {
   position: absolute;
-  width: 150vw;
-  height: 150vw;
+  width: 200vw;
+  height: 200vw;
   mix-blend-mode: overlay;
   background-image: conic-gradient(black, black, #00d9ff, black, black, #f12ff8, black);
   animation: rotate 12s linear infinite;
@@ -109,11 +109,18 @@
 
 }
 
-.circle__eclipse {
+.shadow--top {
   position: absolute;
   width: 100vw;
   height: 100vh;
-  background: radial-gradient(closest-side, transparent, transparent, black);
+  background: url("assets/shadow.png");
+}
+.shadow--bottom {
+  transform: rotate(180deg);
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: url("assets/shadow.png");
 }
 
 .triangle_left {
@@ -319,13 +326,6 @@
   background-size: contain;
 }
 
-
-.palms {
-  display: flex;
-  height: 100vh;
-  width: 100vw;
-}
-
 .leaves_left {
   position: relative;
   height: 100vh;
@@ -333,6 +333,14 @@
   background: transparent;
   display: flex;
   align-items: flex-end;
+}
+
+.leaves_left--nolight {
+  left:0;
+  position: absolute;
+  height: 100vh;
+  width: 50vw;
+  background: transparent;
 }
 
 .leaves_left--one {
@@ -507,6 +515,14 @@
   background: transparent;
 }
 
+.leaves_right--nolight {
+  right:0;
+  position: absolute;
+  height: 100vh;
+  width: 50vw;
+  background: transparent;
+}
+
 .leaves_right--one {
   position: absolute;
   background-image: url("assets/palm/right/palm_right_1.png");
@@ -667,4 +683,21 @@
   100% {
     transform: rotate(45deg);
   }
+}
+
+.portfolio{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.content{ 
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  height: 100vh;
+  width: 100vw;
 }
