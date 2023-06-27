@@ -1,0 +1,73 @@
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: transparent;
+    z-index: 1;
+}
+
+.menu_name {
+    margin-top: 100px;
+    margin-right: 1100px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-transform: lowercase;
+    font-family: 'Six Caps', sans-serif;
+    font-size: 95px;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 400;
+}
+
+.portfoliod {
+    font-size: 177px;
+    line-height: 150px;
+    margin-top: -30px;
+}
+
+.menu_navigation {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:10vh;
+    width: 100vw;
+    position: absolute;
+    top: 40px;
+}
+
+.menu_options {
+    position: absolute;
+    display: flex;
+    gap: 120px;
+    text-transform: lowercase;
+    font-family: 'Six Caps', sans-serif;
+    font-weight: 400;
+    font-size: 45px;
+    color:white;
+}
+
+.menu_icons {
+    position: absolute;
+    display: flex;
+    gap: 15px;
+    right:350px;
+    top:29px;
+}
+
+a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+ }
+
+ a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+ }

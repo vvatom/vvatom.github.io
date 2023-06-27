@@ -2,6 +2,7 @@ import PalmsFront from 'components/PalmsFront';
 import './App.css';
 import Palms from 'components/PalmsBack';
 import Portrait from 'components/Portrait';
+import MenuPortrait from 'components/MenuPortrait';
 
 function App() {
   return (
@@ -10,8 +11,8 @@ function App() {
       <div className='portfolio'>
 
         <Palms />
-        
         <Portrait />
+        <MenuPortrait/>
         <PalmsFront />
 
         <div className='shadow--top' />

@@ -20,8 +20,9 @@ font-family: 'Six Caps', sans-serif;
 
 body {
   margin:0;
+  text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	-moz-osx-font-smoothing: antialiased;
   background-image: url("assets/palm/palms.png");
   background-repeat: no-repeat;
   background-size: cover;
