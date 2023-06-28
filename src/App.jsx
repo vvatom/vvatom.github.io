@@ -3,6 +3,7 @@ import './App.css';
 import Palms from 'components/PalmsBack';
 import Portrait from 'components/Portrait';
 import MenuPortrait from 'components/MenuPortrait';
+import ContentBox from 'components/ContentBox';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       </div>
 
       <div className='content'>
+      <ContentBox/>
         <div className='shadow--bottom' />
       </div>
     </div>

@@ -55,7 +55,7 @@
 .menu_icons {
     position: absolute;
     display: flex;
-    gap: 15px;
+    gap: 30px;
     right:350px;
     top:29px;
 }
