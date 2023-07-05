@@ -1,8 +1,9 @@
 .box_content {
     position:relative;
+    display: flex;
     background: transparent;
     width: 80vw;
-    height: 80vh;
+    height: 70vh;
     z-index: 1;
 }
 
@@ -75,13 +76,12 @@
 .box_content--bottom_background {
     position:absolute;
     clip-path: polygon(0.1% 0, 99.9% 0, 100% 100%, 0% 100%);
-    /* background: linear-gradient(to left, transparent,black); */
+    background: linear-gradient(to left, transparent,black, black, transparent);
     background-color: red;
     width: 100%;
-    height: 5px;
+    height: 5.5px;
     bottom:0;
     animation: background_color_anim 12s linear infinite;
-    /* animation-delay: 1.4s; */
 }
 
 .box_content--bottom_anim{
@@ -127,6 +127,58 @@
     background: linear-gradient(to top, white, transparent);
     animation: anim_left 12s linear infinite;
     animation-delay: 6s;
+}
+
+.box_content--left_site{
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+
+.box_content--right_site{
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+
+.ablities_level{
+  right:90px;
+  position:absolute;
+  line-height: 35px;
+  font-family: 'Comfortaa', cursive;
+  margin: 130px 0 0 0;
+  font-weight: 400;
+  font-size: 25px;
+  color:white;
+}
+
+.hi_there{
+  font-family: 'Mr Dafoe', cursive;
+  font-weight: 400;
+  font-size: 130px;
+  margin: 0 0 0 90px;
+  line-height: 130px;
+  background: linear-gradient(90deg,magenta, rgb(0, 162, 255));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.textss{
+  line-height: 35px;
+  font-family: 'Comfortaa', cursive;
+  margin: 0 0 0 90px;
+  font-weight: 400;
+  font-size: 25px;
+  color:white;
+}
+
+.bold_text{
+  font-weight: bold;
+  font-style: italic;
+}
+
+.level_img{
+  height: 20px;
 }
 
 @keyframes anim_left {
