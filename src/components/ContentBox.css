@@ -7,126 +7,34 @@
     z-index: 1;
 }
 
-.box_content--top_background {
-    position:absolute;
-    clip-path: polygon(0 0, 100% 0, 99.9% 100%, 0.1% 100%);
-    background: linear-gradient(to left, black, transparent);
-
-    width: 100%;
-    height: 5px;
-    top:0;
-
-    animation-delay: 0.7s;
-}
-
-.box_content--top_anim{
-    position: absolute;
-    display: block;
-    height: 100%;
-    width: 100%;
-    border-radius: 100px;
-    filter: blur(5px);
-    background: linear-gradient(to right, white, transparent);
-    animation: anim_top 12s linear infinite;
-}
-
-@keyframes anim_top {
-    0% {
-      transform: translateX(100%)
-    }
-  
-    100% {
-      transform: translateX(-100%)
-    }
-  }
-
 .box_content--right_background {
     position:absolute;
     clip-path: polygon(0 0.5%, 100% 0, 100% 100%, 0 99.5%);
     background: linear-gradient(to bottom, black, transparent);
-    background-color: yellow;
     width: 5px;
     height: 100%;
     right:0;
     animation: background_color_anim 12s linear infinite;
 }
 
-.box_content--right_anim{
-    position: absolute;
-    display: block;
-    height: 100%;
-    width: 100%;
-    border-radius: 100px;
-    filter: blur(5px);
-    background: linear-gradient(to bottom, white, transparent);
-    animation: anim_right 12s linear infinite;
-    /* animation-delay: 6s; */
-}
-
-@keyframes anim_right {
-    0% {
-      transform: translateY(100%)
-    }
-  
-    100% {
-      transform: translateY(-100%)
-    }
-  }
-
 .box_content--bottom_background {
     position:absolute;
     clip-path: polygon(0.1% 0, 99.9% 0, 100% 100%, 0% 100%);
     background: linear-gradient(to left, transparent,black, black, transparent);
-    background-color: red;
     width: 100%;
     height: 5.5px;
     bottom:0;
     animation: background_color_anim 12s linear infinite;
 }
 
-.box_content--bottom_anim{
-    position: absolute;
-    display: block;
-    height: 100%;
-    width: 100%;
-    border-radius: 100px;
-    filter: blur(5px);
-    background: linear-gradient(to left, white, transparent);
-    animation: anim_bottom 12s linear infinite;
-}
-
-@keyframes anim_bottom {
-    0% {
-      transform: translateX(-100%)
-    }
-  
-    100% {
-      transform: translateX(100%)
-    }
-  }
-
 .box_content--left_background {
     position:absolute;
     clip-path: polygon(0 0, 100% 0.5%, 100% 99.5%, 0 100%);
     background: linear-gradient(to bottom, black, transparent);
-    background-color: blue;
     width: 5px;
     height: 100%;
     left:0;
     animation: background_color_anim 12s linear infinite;
-    /* yanimation-delay: 2.1s; */
-}
-
-.box_content--left_anim{
-    position: absolute;
-    display: block;
-    height: 100%;
-    width: 100%;
-    border-radius: 100px;
-    filter: blur(5px);
-    background: linear-gradient(to top, white, transparent);
-    animation: anim_left 12s linear infinite;
-    animation-delay: 6s;
 }
 
 .box_content--left_site{
@@ -163,7 +71,7 @@
   -webkit-text-fill-color: transparent;
 }
 
-.textss{
+.box_content--left_site_text{
   line-height: 35px;
   font-family: 'Comfortaa', cursive;
   margin: 0 0 0 90px;
@@ -180,16 +88,6 @@
 .level_img{
   height: 20px;
 }
-
-@keyframes anim_left {
-    0% {
-      transform: translateY(-100%)
-    }
-  
-    100% {
-      transform: translateY(100%)
-    }
-  }
 
   @keyframes background_color_anim {
     0% {
