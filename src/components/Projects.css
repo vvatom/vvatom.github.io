@@ -1,0 +1,27 @@
+.header_projects{
+    padding: 0 30px;
+    position:absolute;
+    font-family: 'Mr Dafoe', cursive;
+    font-weight: 400;
+    font-size: 130px;
+    top:-20px;
+    margin: 0 0 0 60px;
+    line-height: 170px;
+    background-image: linear-gradient(90deg,magenta, rgb(0, 162, 255));
+    background-clip:text;
+    color: transparent;
+  }
+
+  .showUp{
+    animation: showup 0.5s;
+    animation-fill-mode: forwards;
+  }
+ 
+ @keyframes showup {
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+  }

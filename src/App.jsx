@@ -5,27 +5,32 @@ import Portrait from 'components/Portrait';
 import MenuPortrait from 'components/MenuPortrait';
 import ContentBox from 'components/ContentBox';
 import MenuContentBox from 'components/MenuContentBox';
+import MenuContext, { menuItems } from 'context/MenuContext';
+import { useState } from 'react';
 
 function App() {
+  const [menuItem, setMenuItem] = useState(menuItems.about)
+
   return (
-    <div className="App">
+    <MenuContext.Provider value={{ menuItem, setMenuItem }}>
+      <div className="App">
 
-      <div className='portfolio'>
+        <div className='portfolio'>
 
-        <Palms />
-        <Portrait />
-        <MenuPortrait/>
-        <PalmsFront />
+          <Palms />
+          <Portrait />
+          <MenuPortrait />
+          <PalmsFront />
 
-        <div className='shadow--top' />
+          <div className='shadow--top' />
+        </div>
+
+        <div className='content'>
+          <ContentBox />
+          <div className='shadow--bottom' />
+        </div>
       </div>
-
-      <div className='content'>
-      <ContentBox/>
-      <MenuContentBox/>
-        <div className='shadow--bottom' />
-      </div>
-    </div>
+    </MenuContext.Provider>
   );
 }
 

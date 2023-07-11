@@ -71,3 +71,27 @@ a:link {
     background-color: transparent;
     text-decoration: none;
  }
+
+ .linkedin_ico{
+    transition-duration: 0.1s;
+ }
+ 
+ .linkedin_ico:hover{
+    transform: translateY(-5px);
+ }
+ 
+ .mail_ico{
+    transition-duration: 0.1s;
+ }
+ 
+ .mail_ico:hover{
+    transform: translateY(-5px);
+ }
+ 
+ .github_ico{
+    transition-duration: 0.1s;
+ }
+ 
+ .github_ico:hover{
+    transform: translateY(-5px);
+ }

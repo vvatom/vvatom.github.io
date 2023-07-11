@@ -6,7 +6,7 @@
     height:9.4%;
     width: 100%;
     position: absolute;
-    z-index: 1;
+    z-index: 2;
     bottom:0;
 }
 
@@ -24,6 +24,7 @@
     display: flex;
     column-gap: 30px;
     margin-top: 25px;
+    transition-duration: 0.1s;
 }
 
 a:link {
@@ -50,19 +51,64 @@ a:link {
 
     height: 100%;
     width: 33%;
-    background: linear-gradient(to right, transparent, magenta, rgb(0, 162, 255), transparent);
  }
 
  .content_menu_options--underline_middle{
 
     height: 100%;
     width: 34%;
-    /* background: linear-gradient(to right, transparent, magenta, rgb(0, 162, 255), transparent); */
  }
 
  .content_menu_options--underline_right{
 
     height: 100%;
     width: 33%;
-    /* background: linear-gradient(to right, transparent, magenta, rgb(0, 162, 255), transparent); */
  }
+
+.underline_color{
+   background: linear-gradient(to right, transparent, magenta, rgb(0, 162, 255), transparent);
+   animation: showup 0.3s;
+   animation-fill-mode: forwards;
+}
+
+@keyframes showup {
+   0%{
+     opacity: 0;
+   }
+   100%{
+     opacity: 1;
+   }
+ }
+
+ .content_menu_navigation-pointer{
+    cursor: pointer;
+    transition-duration: 0.1s;
+ }
+
+ .content_menu_navigation-pointer:hover{
+   transform: translateY(-5px);
+}
+
+.linkedin_ico{
+   transition-duration: 0.1s;
+}
+
+.linkedin_ico:hover{
+   transform: translateY(-5px);
+}
+
+.mail_ico{
+   transition-duration: 0.1s;
+}
+
+.mail_ico:hover{
+   transform: translateY(-5px);
+}
+
+.github_ico{
+   transition-duration: 0.1s;
+}
+
+.github_ico:hover{
+   transform: translateY(-5px);
+}

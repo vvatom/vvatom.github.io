@@ -1,10 +1,14 @@
-.about_content--left_site{
+.Blog_img{
+    height:95%;
+}
+
+.blog_content--left_site{
     position: relative;
     width: 50%;
     height: 100%;
   }
   
-  .about_content--right_site{
+  .blog_content--right_site{
     position: relative;
     width: 50%;
     height: 100%;
@@ -24,7 +28,7 @@
     }
   }
 
-  .about_header{
+  .blog_header{
     padding: 0 30px;
     position:absolute;
     font-family: 'Mr Dafoe', cursive;
@@ -38,7 +42,7 @@
     color: transparent;
   }
 
-  .about_text-box{
+  .blog_text-box{
     position:absolute;
     top:130px;
   }

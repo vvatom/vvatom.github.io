@@ -1,22 +1,21 @@
-import { useState } from 'react'
+import classNames from 'classnames'
 import './Projects.css'
 import RickMorty from './RickMorty'
 import ToDo from './ToDo'
+import MenuContext, { menuItems } from 'context/MenuContext';
 
-const MAX_INDEX = 2;
-
-export default function Projects() {
-
-    const [index, setIndex] = useState(0)
-    console.log(index)
+export default function Projects({ index, menuItem }) {
 
     return (
 
         <>
-            <button type="button" onClick={() => setIndex((prevIndex) => Math.abs((prevIndex - 1) % MAX_INDEX))}>left</button>
-            {index === 0 ? <RickMorty /> : null}
-            {index === 1 ? <ToDo /> : null}
-            <button type="button" onClick={() => setIndex((prevIndex) => (prevIndex + 1) % MAX_INDEX)}>right</button>
+            <h2 className={classNames(
+                'header_projects',
+                { 'showUp': menuItem === menuItems.projects }
+            )}>Projects</h2>
+
+            {index === 0 ? <RickMorty index={index} menuItem={menuItem} /> : null}
+            {index === 1 ? <ToDo index={index} menuItem={menuItem} /> : null}
         </>
     )
 }
