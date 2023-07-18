@@ -1,0 +1,177 @@
+.leaves_left--nolight {
+    left:0;
+    position: absolute;
+    height: 100vh;
+    width: 50vw;
+    background: transparent;
+  }
+  
+  .leaves_left--three {
+    position: absolute;
+    background-image: url("assets/palm/left/palm_left_3.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 2037px;
+    height: 515px;
+    transform: rotate(-15deg);
+    left: 0;
+    bottom: 100px;
+    animation: leaf_wave_three 16s linear infinite;
+  }
+  
+  @keyframes leaf_wave_three {
+    0% {
+      transform: rotate(-15deg);
+    }
+  
+    50% {
+      transform: rotate(-18deg);
+    }
+  
+    100% {
+      transform: rotate(-15deg);
+    }
+  }
+  
+  .leaves_left--four {
+    position: absolute;
+    background-image: url("assets/palm/left/palm_left_4.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 1887px;
+    height: 365px;
+    transform: rotate(15deg);
+    left: 100px;
+    bottom: -280px;
+    animation: leaf_wave_four 20s linear infinite;
+  }
+  
+  @keyframes leaf_wave_four {
+    0% {
+      transform: rotate(15deg);
+    }
+  
+    50% {
+      transform: rotate(18deg);
+    }
+  
+    100% {
+      transform: rotate(15deg);
+    }
+  }
+  
+  .leaves_left--five {
+    position: absolute;
+    background-image: url("assets/palm/left/palm_left_5.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: rotate(-50deg);
+    width: 1056px;
+    height: 400px;
+    left: -250px;
+    bottom: 300px;
+    animation: leaf_wave_five 15s linear infinite;
+  }
+  
+  @keyframes leaf_wave_five {
+    0% {
+      transform: rotate(-50deg);
+    }
+  
+    50% {
+      transform: rotate(-60deg);
+    }
+  
+    100% {
+      transform: rotate(-50deg);
+    }
+  }
+  
+  .leaves_right--nolight {
+    right:0;
+    position: absolute;
+    height: 100vh;
+    width: 50vw;
+    background: transparent;
+  }
+  
+  .leaves_right--three {
+    position: absolute;
+    background-image: url("assets/palm/right/palm_right_3.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 2056px;
+    height: 399px;
+    transform: rotate(25deg);
+    right: -1150px;
+    bottom: -200px;
+    animation: leaf_wave_right_three 27s linear infinite;
+  }
+  
+  @keyframes leaf_wave_right_three {
+    0% {
+      transform: rotate(25deg);
+    }
+  
+    50% {
+      transform: rotate(30deg);
+    }
+  
+    100% {
+      transform: rotate(25deg);
+    }
+  }
+  
+  .leaves_right--four {
+    position: absolute;
+    background-image: url("assets/palm/right/palm_right_4.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 1763px;
+    height: 468px;
+    transform: rotate(-16deg);
+    right: -880px;
+    bottom: 0px;
+    animation: leaf_wave_right_four 21s linear infinite;
+  }
+  
+  @keyframes leaf_wave_right_four {
+    0% {
+      transform: rotate(-16deg);
+    }
+  
+    50% {
+      transform: rotate(-13deg);
+    }
+  
+    100% {
+      transform: rotate(-16deg);
+    }
+  }
+  
+  .leaves_right--five {
+    position: absolute;
+    background-image: url("assets/palm/right/palm_right_5.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: rotate(55deg);
+    width: 1981px;
+    height: 477px;
+    right: -1100px;
+    bottom: -350px;
+    animation: leaf_wave_right_five 16s linear infinite;
+  }
+  
+  @keyframes leaf_wave_right_five {
+    0% {
+      transform: rotate(55deg);
+    }
+  
+    50% {
+      transform: rotate(58deg);
+    }
+  
+    100% {
+      transform: rotate(55deg);
+    }
+  }

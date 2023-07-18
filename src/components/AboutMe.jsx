@@ -19,7 +19,7 @@ export default function AboutMe({menuItem}) {
         <div className="about_text-box">
         <p className='box_content--left_site_text'>
             <br />My name is Damian and I am a self-taught
-            <br />software <span className='bold_text'>developer </span>with a background
+            <br /><span className='bold_text'>software developer </span>with a background
             <br />in <span className='bold_text'>graphic design</span>.
         </p>
         <p className='box_content--left_site_text'>
@@ -41,10 +41,10 @@ export default function AboutMe({menuItem}) {
         )}>
         <p className='ablities_level'>
             <br/><img className='level_img' src={level_4} alt="level"/>   React.js
-            <br/><img className='level_img' src={level_4} alt="level"/>   Javascript
+            <br/><img className='level_img' src={level_3} alt="level"/>   Javascript
             <br/><img className='level_img' src={level_1} alt="level"/>   Typescript
             <br/><img className='level_img' src={level_4} alt="level"/>   CSS
-            <br/><img className='level_img' src={level_3} alt="level"/>   Sass
+            <br/><img className='level_img' src={level_1} alt="level"/>   Sass
             <br/><img className='level_img' src={level_3} alt="level"/>   Git
             <br/><img className='level_img' src={level_3} alt="level"/>   Visual Studio Code
             <br/><img className='level_img' src={level_5} alt="level"/>   Adobe Photoshop

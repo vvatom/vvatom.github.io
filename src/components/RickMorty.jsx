@@ -13,25 +13,24 @@ export default function RickMorty({ index, menuItem }) {
                         { 'showUp': index === 0 }
                     )}>
                         <br /><span className='bold_text'>"Rick & Morty - charcters"</span>
-                        <br />It's a web where i use async functions
-                        <br />to connect with Rick&Morty database.
+                        <br />Overview of a random character from
+                        <br />the television show "Rick and Morty"
+                        <br />implemented based on the Rick and Morty API.
                     </p>
                     <p className={classNames(
                         'box_content--left_site_text',
                         { 'showUp': index === 0 }
                     )}>
-                        <br />As a dedicated problem-solver, I'm looking
-                        <br />for an opportunity to gain my first hands-on
-                        <br /><span className='bold_text'>programming experience </span>in the tech industry.
+                        <br />Building this project I've learned:
+                        <br />- fetching data from the REST API
+                        <br />- CSS animations
+                        <br />- working with audio in React environment
                     </p>
                     <p className={classNames(
                         'box_content--left_site_text',
                         { 'showUp': index === 0 }
                     )}>
-                        <br />I enjoy <span className='bold_text'>testing </span>
-                        the limits of <span className='bold_text'>my creativity</span>
-                        <br />by writing scripts and creating new experiences
-                        <br />You can try it here.
+                        <br />You can try it <span className='bold_text'>here</span>
                     </p>
                 </div>
             </div>

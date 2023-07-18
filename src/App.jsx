@@ -1,12 +1,12 @@
 import PalmsFront from 'components/PalmsFront';
 import './App.css';
-import Palms from 'components/PalmsBack';
 import Portrait from 'components/Portrait';
 import MenuPortrait from 'components/MenuPortrait';
 import ContentBox from 'components/ContentBox';
 import MenuContentBox from 'components/MenuContentBox';
 import MenuContext, { menuItems } from 'context/MenuContext';
 import { useState } from 'react';
+import PalmsBack from 'components/PalmsBack';
 
 function App() {
   const [menuItem, setMenuItem] = useState(menuItems.about)
@@ -17,7 +17,7 @@ function App() {
 
         <div className='portfolio'>
 
-          <Palms />
+          <PalmsBack />
           <Portrait />
           <MenuPortrait />
           <PalmsFront />
