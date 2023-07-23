@@ -16,7 +16,17 @@
     border-radius: 100%;
     filter: blur(3px);
     background-image: conic-gradient(transparent 7%, transparent, #0051ff);
-    animation: rotate 12s linear infinite;
+    animation: rotate_blue 12s linear infinite;
+  }
+
+  @keyframes rotate_blue {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
   }
   
   .circle__blue--blur_1 {
@@ -50,8 +60,7 @@
     border-radius: 100%;
     filter: blur(3px);
     background-image: conic-gradient(transparent 7%, transparent, #f82fab);
-    animation: rotate 12s linear infinite;
-    animation-delay: 6s;
+    animation: rotate_purple 12s linear infinite;
   }
   
   .circle__purple--blur_1 {
@@ -77,13 +86,13 @@
     filter: blur(2px);
   }
   
-  @keyframes rotate {
+  @keyframes rotate_purple {
     0% {
-      transform: rotate(0deg);
+      transform: rotate(180deg);
     }
   
     100% {
-      transform: rotate(360deg);
+      transform: rotate(540deg);
     }
   }
   
@@ -103,10 +112,18 @@
     width: 200vw;
     height: 200vw;
     mix-blend-mode: overlay;
-    background-image: conic-gradient(black, black, #00d9ff, black, black, #f12ff8, black);
-    animation: rotate 12s linear infinite;
-    animation-delay: 5s;
+    background-image: conic-gradient(black, black, #f12ff8, black, black, #00d9ff, black);
+    animation: rotate_light 12s linear infinite;
+  }
+
+  @keyframes rotate_light {
+    0% {
+      transform: rotate(0deg);
+    }
   
+    100% {
+      transform: rotate(360deg);
+    }
   }
 
   .shadow--top {

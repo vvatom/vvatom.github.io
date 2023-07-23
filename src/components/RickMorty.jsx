@@ -12,7 +12,7 @@ export default function RickMorty({ index, menuItem }) {
                         'box_content--left_site_text',
                         { 'showUp': index === 0 }
                     )}>
-                        <br /><span className='bold_text'>"Rick & Morty - charcters"</span>
+                        <br /><span className='bold_text'>"Rick & Morty - characters"</span>
                         <br />Overview of a random character from
                         <br />the television show "Rick and Morty"
                         <br />implemented based on the Rick and Morty API.
