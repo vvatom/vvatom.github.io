@@ -1,17 +1,46 @@
 .ToDo_img{
-    height:95%;
+    height:30vw;
+    margin-left:12vh;
+    margin-top:4vh;
+}
+
+@media (max-aspect-ratio: 1/1) {
+.ToDo_img {
+  margin-bottom: 3vh;
+height:30vh;
+}
 }
 
 .todo_content--left_site{
+  display:flex;
     position: relative;
     width: 50%;
     height: 100%;
   }
+
+  @media (max-aspect-ratio: 1/1) {
+    .todo_content--left_site {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+    }
+  }
   
   .todo_content--right_site{
+    display:flex;
     position: relative;
     width: 50%;
     height: 100%;
+  }
+
+  @media (max-aspect-ratio: 1/1) {
+    .todo_content--right_site {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+    }
   }
 
   .showUp{
@@ -31,4 +60,15 @@
   .todo_text-box{
     position:absolute;
     top:130px;
+  }
+
+  .todo_text-box{
+    position:absolute;
+    top:15vh;
+  }
+
+  @media (max-aspect-ratio: 1/1) {
+    .todo_text-box {
+      top:5vh;
+    }
   }

@@ -16,43 +16,45 @@ export default function ContentBox() {
     return (
         <>
 
-        <button type="button" className={classNames(
-            {"projects_button--left":true},
-            {'shutDown':menuItem !== menuItems.projects},
-            {'showUp':menuItem === menuItems.projects}
-            )}
-            onClick={() => setIndex((prevIndex) => Math.abs((prevIndex - 1) % MAX_INDEX))}>
+            <button type="button" className={classNames(
+                { "projects_button--left": true },
+                { 'shutDown': menuItem !== menuItems.projects },
+                { 'showUp': menuItem === menuItems.projects }
+            )}>
 
-            <div className='projects_button--left_arrow'>
-            <span className='left_arrow-top'/>
-            <span className='left_arrow-bottom'/>
+                <div className='projects_button--left_arrow'
+                    onClick={() => setIndex((prevIndex) => Math.abs((prevIndex - 1) % MAX_INDEX))}
+                >
+                    <span className='left_arrow-top' />
+                    <span className='left_arrow-bottom' />
+                </div>
+            </button>
+            <div className='box_content'>
+                {menuItem === menuItems.about ? <AboutMe menuItem={menuItem} /> : null}
+                {menuItem === menuItems.projects ? <Projects menuItem={menuItem} index={index} /> : null}
+                {menuItem === menuItems.blog ? <Blog menuItem={menuItem} /> : null}
+                <div className='box_content--bottom_background'>
+                </div>
+                <div className='box_content--right_background'>
+                </div>
+                <div className='box_content--left_background'>
+                </div>
             </div>
-        </button>
-        <div className='box_content'>
-            {menuItem === menuItems.about ? <AboutMe menuItem={menuItem}/> : null }
-            {menuItem === menuItems.projects ? <Projects menuItem={menuItem} index={index} /> : null}
-            {menuItem === menuItems.blog ? <Blog menuItem={menuItem} /> : null}
-            <div className='box_content--bottom_background'>
-            </div>
-            <div className='box_content--right_background'>
-            </div>
-            <div className='box_content--left_background'>
-            </div>
-        </div>
 
-        <button type="button" className={classNames(
-            {"projects_button--right":true},
-            {'shutDown':menuItem !== menuItems.projects},
-            {'showUp':menuItem === menuItems.projects}
-            )}
-            onClick={() => setIndex((prevIndex) => (prevIndex + 1) % MAX_INDEX)}>
+            <button type="button" className={classNames(
+                { "projects_button--right": true },
+                { 'shutDown': menuItem !== menuItems.projects },
+                { 'showUp': menuItem === menuItems.projects }
+            )}>
 
-        <div className='projects_button--right_arrow'>
-            <span className='right_arrow-bottom'/>
-            <span className='right_arrow-top'/>
-        </div>
-        </button>
-        <MenuContentBox />
+                <div className='projects_button--right_arrow'
+                    onClick={() => setIndex((prevIndex) => (prevIndex + 1) % MAX_INDEX)}
+                >
+                    <span className='right_arrow-bottom' />
+                    <span className='right_arrow-top' />
+                </div>
+            </button>
+            <MenuContentBox />
         </>
     )
 }

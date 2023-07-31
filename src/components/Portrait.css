@@ -109,8 +109,8 @@
   
   .circle__light {
     position: absolute;
-    width: 200vw;
-    height: 200vw;
+    width: 350vh;
+    height: 350vh;
     mix-blend-mode: overlay;
     background-image: conic-gradient(black, black, #f12ff8, black, black, #00d9ff, black);
     animation: rotate_light 12s linear infinite;
@@ -126,20 +126,6 @@
     }
   }
 
-  .shadow--top {
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    background: url("assets/shadow.png");
-  }
-  .shadow--bottom {
-    transform: rotate(180deg);
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    background: url("assets/shadow.png");
-  }
-  
   .triangle_left {
     position: relative;
     clip-path: polygon(0 0, 100% 6.5%, 100% 93.5%, 0 100%);
@@ -324,12 +310,49 @@
   }
   
   .front {
-    scale: 70%;
-    margin-top: 100px;
+    scale:0.7;
+    margin-top: 5vw;
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
+  }
+
+  @media (max-aspect-ratio: 1024/600) {
+    .front {
+      scale:0.5;
+      margin-top: 20vh;
+    }
+  }
+
+  @media (max-aspect-ratio: 140/87) {
+    .front {
+      scale:0.5;
+      margin-top: -3vh;
+    }
+  }
+  
+
+  @media (max-aspect-ratio: 36/74) {
+    .front {
+      scale:0.4;
+      margin-top: -3vh;
+    }
+  }
+  
+
+  @media (max-aspect-ratio: 54/72) {
+    .front {
+      scale:0.4;
+      margin-top: -3vh;
+    }
+  }
+
+  @media (max-aspect-ratio: 280/653) {
+    .front {
+      scale:0.3;
+      margin-top: -3vh;
+    }
   }
   
   .photo {

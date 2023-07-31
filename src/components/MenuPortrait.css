@@ -10,25 +10,32 @@
 }
 
 .menu_name {
-    margin-top: 100px;
-    margin-right: 1100px;
+    margin-top: 10vh;
+    margin-right: 57vw;
     position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     text-transform: lowercase;
     font-family: 'Six Caps', sans-serif;
-    font-size: 95px;
+    font-size: 10.2vh;
     color: white;
     -webkit-font-smoothing: antialiased;
     font-weight: 400;
 }
 
 .portfoliod {
-    font-size: 177px;
-    line-height: 150px;
-    margin-top: -30px;
+    font-size: 19vh;
+    line-height: 16vh;
+    margin-top: -3vh;
 }
+
+@media (max-aspect-ratio: 140/87) {
+   .menu_name {
+     margin-top: 67vh;
+     margin-right: 0;
+   }
+ }
 
 .menu_navigation {
     position: relative;
@@ -41,23 +48,59 @@
     top: 40px;
 }
 
+@media (max-aspect-ratio: 140/87) {
+   .menu_navigation {
+flex-direction: column;
+height:20vh;
+   }
+ }
+
 .menu_options {
     position: absolute;
     display: flex;
-    gap: 120px;
+    gap: 14vh;
     text-transform: lowercase;
     font-family: 'Six Caps', sans-serif;
     font-weight: 400;
-    font-size: 45px;
+    font-size: 5vh;
     color:white;
 }
+
+@media (max-aspect-ratio: 140/87) {
+   .menu_options {
+gap:7vh;
+   }
+ }
 
 .menu_icons {
     position: absolute;
     display: flex;
-    gap: 30px;
-    right:350px;
-    top:29px;
+    gap: 4vh;
+    right:15vw;
+    top:3vh
+}
+
+@media (max-aspect-ratio: 140/87) {
+   .menu_icons {
+     margin-top: 0;
+     right:auto;
+     top:0;
+   }
+ }
+
+.github_ico{
+   width: 4vh;
+   height: 4vh;
+}
+
+.linkedin_ico{
+   width: 4vh;
+   height: 4;
+}
+
+.mail_ico{
+   width: 4vh;
+   height: 4vh;
 }
 
 a:link {

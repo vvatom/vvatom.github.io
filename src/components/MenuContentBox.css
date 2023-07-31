@@ -12,18 +12,32 @@
 
 .content_menu_options {
     display: flex;
-    column-gap: 120px;
+    column-gap: 14vh;
     text-transform: lowercase;
     font-family: 'Six Caps', sans-serif;
     font-weight: 400;
-    font-size: 45px;
+    font-size: 5vh;
     color:white;
 }
+
+@media (max-aspect-ratio: 140/87) {
+   .content_menu_options {
+gap:7vh;
+text-shadow: 0px 0px 1vh black;
+   }
+ }
+
+ @media (max-aspect-ratio: 280/653) {
+   .content_menu_options {
+gap:4vh;
+text-shadow: 0px 0px 1vh black;
+   }
+ }
 
 .content_menu_icons {
     display: flex;
     column-gap: 30px;
-    margin-top: 25px;
+    margin-top: 2vh;
     transition-duration: 0.1s;
 }
 
@@ -44,8 +58,19 @@ a:link {
     display: flex;
     height: 5px;
     width: 540px;
-
 }
+
+@media (max-aspect-ratio: 140/87) {
+   .content_menu_options--underline {
+      width:42vh;
+   }
+ }
+
+ @media (max-aspect-ratio: 280/653) {
+   .content_menu_options--underline {
+      width:32vh;
+   }
+ }
 
  .content_menu_options--underline_left{
 

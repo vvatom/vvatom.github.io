@@ -1,17 +1,45 @@
 .Rick_and_Morty{
-    height:95%;
+    height:30vw;
+}
+
+@media (max-aspect-ratio: 1/1) {
+  .Rick_and_Morty {
+height:30vh;
+  }
 }
 
 .rickmorty_content--left_site{
+  display:flex;
     position: relative;
     width: 50%;
     height: 100%;
   }
+
+  @media (max-aspect-ratio: 1/1) {
+    .rickmorty_content--left_site {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+    }
+  }
   
   .rickmorty_content--right_site{
+    display:flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
     width: 50%;
     height: 100%;
+  }
+
+  @media (max-aspect-ratio: 1/1) {
+    .rickmorty_content--right_site {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+    }
   }
 
   .showUp{
@@ -30,5 +58,11 @@
 
   .rickmorty_text-box{
     position:absolute;
-    top:130px;
+    top:15vh;
+  }
+
+  @media (max-aspect-ratio: 1/1) {
+    .rickmorty_text-box {
+      top:5vh;
+    }
   }

@@ -30,7 +30,11 @@ export default function RickMorty({ index, menuItem }) {
                         'box_content--left_site_text',
                         { 'showUp': index === 0 }
                     )}>
-                        <br />You can try it <span className='bold_text'>here</span>
+                        <br />You can try it <span className='bold_text'>
+                            <a href="https://vvatom.github.io/rick-and-morty-lottery/" target="_blank" rel="noreferrer">
+                                here
+                            </a>
+                        </span>
                     </p>
                 </div>
             </div>
@@ -38,7 +42,7 @@ export default function RickMorty({ index, menuItem }) {
                 'rickmorty_content--right_site',
                 { 'showUp': index === 0 }
             )}>
-                <a href="https://vvatom.github.io/rick-and-morty-lottery/">
+                <a href="https://vvatom.github.io/rick-and-morty-lottery/" target="_blank" rel="noreferrer">
                     <img className='Rick_and_Morty' src={Rick_n_Morty} alt="Rick_n_Morty" />
                 </a>
             </div>

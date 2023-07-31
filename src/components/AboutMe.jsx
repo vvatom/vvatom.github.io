@@ -1,4 +1,5 @@
 import './AboutMe.css'
+import level_0 from '../assets/ability_levels/levels_0.png';
 import level_1 from '../assets/ability_levels/levels_1.png';
 import level_3 from '../assets/ability_levels/levels_3.png';
 import level_4 from '../assets/ability_levels/levels_4.png';
@@ -50,7 +51,7 @@ export default function AboutMe({menuItem}) {
             <br/><img className='level_img' src={level_5} alt="level"/>   Adobe Photoshop
             <br/><img className='level_img' src={level_4} alt="level"/>   Graphic design
             <br/><img className='level_img' src={level_4} alt="level"/>   Hardware and software
-            <br/>                  troubleshooting
+            <br/><img className='level_img' src={level_0} alt="level"/>   troubleshooting
         </p>
         </div>
         </>

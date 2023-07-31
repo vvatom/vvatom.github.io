@@ -31,13 +31,13 @@ export default function MenuPortrait() {
                 </span>
                 <span span className="menu_icons">
                 <a href="https://github.com/vvatom">
-                <img className="github_ico" src={github_ico} alt="github_icon" width="40" height="40"/>
+                <img className="github_ico" src={github_ico} alt="github_icon"/>
                 </a>
                 <a href="https://www.linkedin.com/in/damian-drzewiecki-0a6167246/">
-                <img className="linkedin_ico" src={linkedin_ico} alt="linkedin_icon" width="40" height="40"/>
+                <img className="linkedin_ico" src={linkedin_ico} alt="linkedin_icon"/>
                 </a>
                 <a href="mailto:drzewiecki.damian96@gmail.com">
-                <img className="mail_ico" src={mail_ico} alt="mail_icon" width="40" height="40"/>
+                <img className="mail_ico" src={mail_ico} alt="mail_icon"/>
                 </a>
                 </span>
             </nav>

@@ -9,10 +9,12 @@ export default function Projects({ index, menuItem }) {
     return (
 
         <>
-            <h2 className={classNames(
-                'header_projects',
-                { 'showUp': menuItem === menuItems.projects }
-            )}>Projects</h2>
+            <div className='header_projects_box'>
+                <h2 className={classNames(
+                    'header_projects',
+                    { 'showUp': menuItem === menuItems.projects }
+                )}>Projects</h2>
+            </div>
 
             {index === 0 ? <RickMorty index={index} menuItem={menuItem} /> : null}
             {index === 1 ? <ToDo index={index} menuItem={menuItem} /> : null}

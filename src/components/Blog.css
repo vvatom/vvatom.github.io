@@ -1,17 +1,45 @@
 .Blog_img{
-    height:95%;
+    height:35vw;
+}
+
+@media (max-aspect-ratio: 1/1) {
+  .Blog_img {
+height:35vh;
+margin-bottom: 3vh;
+  }
 }
 
 .blog_content--left_site{
+    display: flex;
     position: relative;
     width: 50%;
     height: 100%;
   }
+
+  @media (max-aspect-ratio: 1/1) {
+    .blog_content--left_site {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+    }
+  }
   
   .blog_content--right_site{
+    display: flex;
+    align-items: center;
     position: relative;
     width: 50%;
     height: 100%;
+  }
+
+  @media (max-aspect-ratio: 1/1) {
+    .blog_content--right_site {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+    }
   }
 
   .showUp{
@@ -33,16 +61,30 @@
     position:absolute;
     font-family: 'Mr Dafoe', cursive;
     font-weight: 400;
-    font-size: 130px;
+    font-size: 8vw;
     top:-20px;
-    margin: 0 0 0 60px;
-    line-height: 170px;
+    margin: -3vh 0 0 2vw;
+    line-height: 250px;
     background-image: linear-gradient(90deg,magenta, rgb(0, 162, 255));
     background-clip:text;
     color: transparent;
   }
 
+  @media (max-aspect-ratio: 1/1) {
+    .blog_header {
+      line-height: 20vh;
+      font-size: 8vh;
+      margin:-5vh 0 0 0;
+    }
+  }
+
   .blog_text-box{
     position:absolute;
     top:130px;
+  }
+
+  @media (max-aspect-ratio: 1/1) {
+    .blog_text-box {
+      margin:-3vh 0 0 0;
+    }
   }

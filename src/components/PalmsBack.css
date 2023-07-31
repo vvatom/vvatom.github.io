@@ -13,6 +13,12 @@
     align-items: flex-end;
   }
 
+  @media (max-aspect-ratio: 1850/870) {
+    .leaves_left {
+      left:calc((1920px - 100vw)/-2);
+    }
+  }
+
   .leaves_left--one {
     position: absolute;
     background-image: url("assets/palm/left/palm_left_1.png");
@@ -99,6 +105,12 @@
     height: 100vh;
     width: 50vw;
     background: transparent;
+  }
+
+  @media (max-aspect-ratio: 1850/870) {
+    .leaves_right {
+      right:calc((1920px - 100vw)/-2);
+    }
   }
 
   .leaves_right--one {
