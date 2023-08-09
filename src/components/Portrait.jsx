@@ -16,23 +16,9 @@ export default function Portrait() {
               <span className='triangle_right--anim'></span>
               <span className='triangle_right--anim_reverse'></span>
             </div>
-
-            <span className='circle__blue--anim'></span>
-            <span className='circle__blue--anim circle__blue--blur_1'></span>
-            <span className='circle__blue--anim circle__blue--blur_2'></span>
-            <span className='circle__blue--anim circle__blue--blur_3'></span>
-            <span className='circle__blue--anim circle__blue--blur_4'></span>
-            <span className='circle__blue--anim circle__blue--white_ray'></span>
-
-            <span className='circle__purple--anim'></span>
-            <span className='circle__purple--anim circle__purple--blur_1'></span>
-            <span className='circle__purple--anim circle__purple--blur_2'></span>
-            <span className='circle__purple--anim circle__purple--blur_3'></span>
-            <span className='circle__purple--anim circle__purple--blur_4'></span>
-            <span className='circle__purple--anim circle__purple--white_ray'></span>
           </div>
 
-          <div className='circle__photo'></div>
+          <div className='circle__laser'></div>
           <div className='photo'></div>
 
           <div className='triangle_bottom'>

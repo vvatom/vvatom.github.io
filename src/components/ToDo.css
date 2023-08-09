@@ -1,18 +1,17 @@
 .ToDo_img{
-    height:30vw;
-    margin-left:12vh;
-    margin-top:4vh;
+  height:30vw;
 }
 
 @media (max-aspect-ratio: 1/1) {
 .ToDo_img {
-  margin-bottom: 3vh;
 height:30vh;
+margin-bottom: 4vh;
 }
 }
 
 .todo_content--left_site{
   display:flex;
+  align-items: center;
     position: relative;
     width: 50%;
     height: 100%;
@@ -30,6 +29,8 @@ height:30vh;
   .todo_content--right_site{
     display:flex;
     position: relative;
+    justify-content: center;
+    align-items: center;
     width: 50%;
     height: 100%;
   }
@@ -59,16 +60,13 @@ height:30vh;
 
   .todo_text-box{
     position:absolute;
-    top:130px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
-  .todo_text-box{
-    position:absolute;
-    top:15vh;
-  }
-
-  @media (max-aspect-ratio: 1/1) {
+  @media (max-aspect-ratio: 46/87) {
     .todo_text-box {
-      top:5vh;
+      width:90%;
     }
   }

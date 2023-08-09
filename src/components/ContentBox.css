@@ -44,10 +44,11 @@ flex-direction: column;
 }
 
 .ablities_level{
+  display:flex;
+  flex-direction: column;
   position:absolute;
   line-height: 2vw;
   font-family: 'Comfortaa', cursive;
-  margin: 13vh 0 0 9vw;
   font-weight: 400;
   font-size: 1.4vw;
   color:white;
@@ -55,6 +56,18 @@ flex-direction: column;
 
 @media (max-aspect-ratio: 1/1) {
   .ablities_level {
+    flex-direction:row;
+    gap:10vw;
+    font-size: 1.8vh;
+    line-height: 2.5vh;
+    margin:0 0 5vh 0;
+  }
+}
+
+@media (max-aspect-ratio: 76/96) {
+  .ablities_level {
+    flex-direction:column;
+    gap:0;
     font-size: 1.8vh;
     line-height: 2.5vh;
     margin:0 0 5vh 0;
@@ -151,6 +164,12 @@ height:1.6vh;
   height: 70vh;
   width:7vw;
   background: transparent;
+  cursor: pointer;
+  transition-duration: 0.1s;
+}
+
+.projects_button--left:hover{
+  scale:1.2;
 }
 
 .projects_button--left_arrow{
@@ -160,13 +179,7 @@ height:1.6vh;
   height: 4vw;
   width: 4vw;
   background:transparent;
-  cursor: pointer;
   transition-duration: 0.1s;
-}
-
-.projects_button--left_arrow:hover{
-  height: 4.5vw;
-  width: 4.5vw;
 }
 
 .left_arrow-bottom{
@@ -174,14 +187,14 @@ height:1.6vh;
   background: linear-gradient(to right, #8051ff,#ff00ff);;
   right:0px;
   width: 100%;
-  height:5px;
+  height:0.3vh;
   }
   
   .left_arrow-top{
     position:absolute;
     background: linear-gradient(to top, #00a2ff,#8051ff);
     left:0px;
-    width: 5px;
+    width: 0.3vh;
     height:100%;
     }
 
@@ -196,6 +209,12 @@ height:1.6vh;
   height: 70vh;
   width:7vw;
   background: transparent;
+  cursor: pointer;
+  transition-duration: 0.1s;
+}
+
+.projects_button--right:hover{
+  scale:1.2;
 }
 
 .projects_button--right_arrow{
@@ -204,20 +223,14 @@ height:1.6vh;
   position:absolute;
   height: 4vw;
   width: 4vw;
-  cursor: pointer;
   transition-duration: 0.1s;
-}
-
-.projects_button--right_arrow:hover{
-  height: 4.5vw;
-  width: 4.5vw;
 }
 
 .right_arrow-bottom{
 position:absolute;
 background: linear-gradient(to bottom, #8051ff,#00a2ff);;
 right:0px;
-width: 5px;
+width: 0.3vh;
 height:100%;
 }
 
@@ -226,7 +239,7 @@ height:100%;
   background: linear-gradient(to right, #ff00ff,#8051ff);
   right:0px;
   width: 100%;
-  height:5px;
+  height:0.3vh;
   }
 
   .shutDown{

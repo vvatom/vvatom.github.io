@@ -57,7 +57,7 @@ a:link {
     position: relative;
     display: flex;
     height: 5px;
-    width: 540px;
+    width: 61vh;
 }
 
 @media (max-aspect-ratio: 140/87) {

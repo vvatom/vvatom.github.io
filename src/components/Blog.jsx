@@ -13,7 +13,6 @@ export default function Blog({menuItem}) {
         <h2 className='blog_header'>Blog</h2>
         <div className='blog_text-box'>
         <p className='box_content--left_site_text'>
-            <br />
             <br />Work in progress.
             <br />
             <br />Soon I would like to invite you to my blog,

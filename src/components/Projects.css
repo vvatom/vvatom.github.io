@@ -15,7 +15,7 @@ justify-content: center;
     position:absolute;
     font-family: 'Mr Dafoe', cursive;
     font-weight: 400;
-    margin: -6vh 0 0 2vw;
+    margin: -10vh 0 0 2vw;
     line-height: 250px;
     background-image: linear-gradient(90deg,magenta, rgb(0, 162, 255));
     background-clip:text;
@@ -26,7 +26,7 @@ justify-content: center;
     .header_projects {
         line-height: 20vh;
         font-size: 10vh;
-        margin:0 0 0 0;
+        margin:-10vh 0 0 0;
     }
   }
 

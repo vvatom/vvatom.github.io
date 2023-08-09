@@ -1,15 +1,17 @@
 .Rick_and_Morty{
-    height:30vw;
+  height:30vw;
 }
 
 @media (max-aspect-ratio: 1/1) {
   .Rick_and_Morty {
 height:30vh;
+margin-bottom: 4vh;
   }
 }
 
 .rickmorty_content--left_site{
   display:flex;
+  align-items: center;
     position: relative;
     width: 50%;
     height: 100%;
@@ -57,12 +59,14 @@ height:30vh;
   }
 
   .rickmorty_text-box{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
     position:absolute;
-    top:15vh;
   }
 
-  @media (max-aspect-ratio: 1/1) {
+  @media (max-aspect-ratio: 46/87) {
     .rickmorty_text-box {
-      top:5vh;
+      width:90%;
     }
   }

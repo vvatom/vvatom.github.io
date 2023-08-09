@@ -16,19 +16,19 @@ export default function ContentBox() {
     return (
         <>
 
-            <button type="button" className={classNames(
-                { "projects_button--left": true },
-                { 'shutDown': menuItem !== menuItems.projects },
-                { 'showUp': menuItem === menuItems.projects }
-            )}>
+            <div
+                onClick={() => setIndex((prevIndex) => Math.abs((prevIndex - 1) % MAX_INDEX))}
+                className={classNames(
+                    { "projects_button--left": true },
+                    { 'shutDown': menuItem !== menuItems.projects },
+                    { 'showUp': menuItem === menuItems.projects }
+                )}>
 
-                <div className='projects_button--left_arrow'
-                    onClick={() => setIndex((prevIndex) => Math.abs((prevIndex - 1) % MAX_INDEX))}
-                >
+                <div className='projects_button--left_arrow'>
                     <span className='left_arrow-top' />
                     <span className='left_arrow-bottom' />
                 </div>
-            </button>
+            </div>
             <div className='box_content'>
                 {menuItem === menuItems.about ? <AboutMe menuItem={menuItem} /> : null}
                 {menuItem === menuItems.projects ? <Projects menuItem={menuItem} index={index} /> : null}
@@ -41,19 +41,19 @@ export default function ContentBox() {
                 </div>
             </div>
 
-            <button type="button" className={classNames(
-                { "projects_button--right": true },
-                { 'shutDown': menuItem !== menuItems.projects },
-                { 'showUp': menuItem === menuItems.projects }
-            )}>
+            <div
+                onClick={() => setIndex((prevIndex) => (prevIndex + 1) % MAX_INDEX)}
+                className={classNames(
+                    { "projects_button--right": true },
+                    { 'shutDown': menuItem !== menuItems.projects },
+                    { 'showUp': menuItem === menuItems.projects }
+                )}>
 
-                <div className='projects_button--right_arrow'
-                    onClick={() => setIndex((prevIndex) => (prevIndex + 1) % MAX_INDEX)}
-                >
+                <div className='projects_button--right_arrow'>
                     <span className='right_arrow-bottom' />
                     <span className='right_arrow-top' />
                 </div>
-            </button>
+            </div>
             <MenuContentBox />
         </>
     )
