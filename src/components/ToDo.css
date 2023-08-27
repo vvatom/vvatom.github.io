@@ -65,7 +65,7 @@ margin-bottom: 4vh;
     justify-content: center;
   }
 
-  @media (max-aspect-ratio: 46/87) {
+  @media (max-aspect-ratio: 53/96) {
     .todo_text-box {
       width:90%;
     }

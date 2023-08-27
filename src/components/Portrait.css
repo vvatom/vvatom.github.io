@@ -1,277 +1,342 @@
 .circle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 31.5vw;
-    height: 31.5vw;
-    background: linear-gradient(to right, #f82fab27, #0051ff2a);
-    border-radius: 100%;
-    overflow: hidden;
-  }
-  
-  .circle__laser {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 100%;
-    animation: laser_anim 12s linear infinite;
-    position: absolute;
-    width: 112.5vh;
-    height: 112.5vh;
-    background-image: url("assets/laser.png");
-    background-repeat: no-repeat;
-    background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 63vh;
+  height: 63vh;
+  background: linear-gradient(to right, #f82fab27, #0051ff2a);
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.circle__laser {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  animation: laser_anim 12s linear infinite;
+  position: absolute;
+  width: 112.5vh;
+  height: 112.5vh;
+  background-image: url("assets/laser.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@keyframes laser_anim {
+  0% {
+    transform: rotate(0deg);
   }
 
-  @keyframes laser_anim {
-    0% {
-      transform: rotate(0deg);
-    }
-  
-    100% {
-      transform: rotate(360deg);
-    }
+  100% {
+    transform: rotate(360deg);
   }
-  
-  .circle__light {
-    position: absolute;
-    width: 350vh;
-    height: 350vh;
-    mix-blend-mode: overlay;
-    background-image: conic-gradient(black, black, #f12ff8, black, black, #00d9ff, black);
-    animation: circle_light--rotate 12s linear infinite;
+}
+
+.circle__light {
+  position: absolute;
+  width: 350vh;
+  height: 350vh;
+  mix-blend-mode: overlay;
+  background-image: conic-gradient(black, black, #f12ff8, black, black, #00d9ff, black);
+  animation: circle_light--rotate 12s linear infinite;
+}
+
+@keyframes circle_light--rotate {
+  0% {
+    transform: rotate(0deg);
   }
 
-  @keyframes circle_light--rotate {
-    0% {
-      transform: rotate(0deg);
-    }
-  
-    100% {
-      transform: rotate(360deg);
-    }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.triangle_left {
+  position: relative;
+  clip-path: polygon(0 0, 100% 6.5%, 100% 93.5%, 0 100%);
+  margin-bottom: 23vh;
+  margin-right: 38.8vh;
+  position: absolute;
+  height: 83vh;
+  width: 3.2vh;
+  background: linear-gradient(black, blue, black);
+  transform: rotate(30deg);
+  overflow: hidden;
+}
+
+.triangle_left--anim {
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+  filter: blur(5px);
+  border-radius: 100px;
+  background: linear-gradient(to top, white, transparent);
+  animation: anim_three 12s linear infinite;
+}
+
+@keyframes anim_three {
+  0% {
+    transform: translateY(-100%)
   }
 
-  .triangle_left {
-    position: relative;
-    clip-path: polygon(0 0, 100% 6.5%, 100% 93.5%, 0 100%);
-    margin-bottom: 23vh;
-    margin-right: 38.8vh;
-    position: absolute;
-    height: 83vh;
-    width: 3.2vh;
-    background: linear-gradient(black, blue, black);
-    transform: rotate(30deg);
-    overflow: hidden;
+  33% {
+    transform: translateY(-100%)
   }
-  
-  .triangle_left--anim {
-    position: absolute;
-    display: block;
-    height: 100%;
-    width: 100%;
-    filter: blur(5px);
-    border-radius: 100px;
-    background: linear-gradient(to top, white, transparent);
-    animation: anim_three 12s linear infinite;
+
+  66% {
+    transform: translateY(0%)
   }
-  
-  @keyframes anim_three {
-    0% {
-      transform: translateY(-100%)
-    }
-  
-    100% {
-      transform: translateY(100%)
-    }
+
+  100% {
+    transform: translateY(100%)
   }
-  
-  .triangle_left--anim_reverse {
-    position: absolute;
-    display: block;
-    height: 100%;
-    width: 100%;
-    border-radius: 100px;
-    filter: blur(5px);
-    background: linear-gradient(to top, transparent, white);
-    animation: anim_three_reverse 12s linear infinite;
+}
+
+.triangle_left--anim_reverse {
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  filter: blur(5px);
+  background: linear-gradient(to top, transparent, white);
+  animation: anim_three_reverse 12s linear infinite;
+}
+
+@keyframes anim_three_reverse {
+  0% {
+    transform: translateY(100%)
   }
-  
-  @keyframes anim_three_reverse {
-    0% {
-      transform: translateY(100%)
-    }
-  
-    100% {
-      transform: translateY(-100%)
-    }
+
+  33% {
+    transform: translateY(0)
   }
-  
-  .triangle_right {
-    position: relative;
-    clip-path: polygon(0 6.5%, 100% 0, 100% 100%, 0 93.5%);
-    margin-bottom: 23vh;
-    margin-left: 38.8vh;
-    position: absolute;
-    height: 83vh;
-    width: 3.2vh;
-    background: linear-gradient(black, magenta, black);
-    transform: rotate(-30deg);
-    overflow: hidden;
+
+  66% {
+    transform: translateY(-100%)
   }
-  
-  .triangle_right--anim {
-    position: absolute;
-    display: block;
-    height: 100%;
-    width: 100%;
-    border-radius: 100px;
-    filter: blur(5px);
-    background: linear-gradient(to bottom, transparent, white);
-    animation: anim_two 12s linear infinite;
-  
+
+  100% {
+    transform: translateY(-100%)
   }
-  
-  @keyframes anim_two {
-    0% {
-      transform: translateY(-100%)
-    }
-  
-    100% {
-      transform: translateY(100%)
-    }
+}
+
+.triangle_right {
+  position: relative;
+  clip-path: polygon(0 6.5%, 100% 0, 100% 100%, 0 93.5%);
+  margin-bottom: 23vh;
+  margin-left: 38.8vh;
+  position: absolute;
+  height: 83vh;
+  width: 3.2vh;
+  background: linear-gradient(black, magenta, black);
+  transform: rotate(-30deg);
+  overflow: hidden;
+}
+
+.triangle_right--anim {
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  filter: blur(5px);
+  background: linear-gradient(to bottom, transparent, white);
+  animation: anim_two 12s linear infinite;
+
+}
+
+@keyframes anim_two {
+  0% {
+    transform: translateY(-100%)
   }
-  
-  .triangle_right--anim_reverse {
-    position: absolute;
-    display: block;
-    height: 100%;
-    width: 100%;
-    border-radius: 100px;
-    filter: blur(5px);
-    background: linear-gradient(to bottom, white, transparent);
-    animation: anim_two_reverse 12s linear infinite;
-  
+
+  33% {
+    transform: translateY(-100%)
   }
-  
-  @keyframes anim_two_reverse {
-    0% {
-      transform: translateY(100%)
-    }
-  
-    100% {
-      transform: translateY(-100%)
-    }
+
+  66% {
+    transform: translateY(0%)
   }
-  
-  .triangle_bottom {
-    position: relative;
-    clip-path: polygon(6.5% 0, 93.5% 0, 100% 100%, 0 100%);
-    margin-top: 44vh;
-    position: absolute;
-    height: 3.2vh;
-    width: 83vh;
-    background: linear-gradient(to right, black, transparent, black);
-    overflow: hidden;
-    animation: background_color 12s linear infinite
+
+  100% {
+    transform: translateY(100%)
   }
-  
-  @keyframes background_color {
-    0% {
-      background-color: magenta;
-    }
-  
-    50% {
-      background-color: blue;
-    }
-  
-    100% {
-      background-color: magenta;
-    }
-  
+}
+
+.triangle_right--anim_reverse {
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  filter: blur(5px);
+  background: linear-gradient(to bottom, white, transparent);
+  animation: anim_two_reverse 12s linear infinite;
+}
+
+@keyframes anim_two_reverse {
+  0% {
+    transform: translateY(100%)
   }
-  
-  .triangle_bottom--anim {
-    position: absolute;
-    display: block;
-    height: 100%;
-    width: 100%;
-    border-radius: 100px;
-    filter: blur(5px);
-    background: linear-gradient(to left, white, transparent);
-    animation: anim_one 12s linear infinite;
-    animation-delay: 6s;
+
+  33% {
+    transform: translateY(0)
   }
-  
-  @keyframes anim_one {
-    0% {
-      transform: translateX(-100%)
-    }
-  
-    100% {
-      transform: translateX(100%)
-    }
+
+  66% {
+    transform: translateY(-100%)
   }
-  
-  .triangle_bottom--anim_reverse {
-    position: absolute;
-    display: block;
-    height: 100%;
-    width: 100%;
-    border-radius: 100px;
-    filter: blur(5px);
-    background: linear-gradient(to left, transparent, white);
-    animation: anim_one_reverse 12s linear infinite;
-    animation-delay: 6s;
+
+  100% {
+    transform: translateY(-100%)
   }
-  
-  @keyframes anim_one_reverse {
-    0% {
-      transform: translateX(100%)
-    }
-  
-    100% {
-      transform: translateX(-100%)
-    }
+}
+
+.triangle_bottom {
+  position: relative;
+  clip-path: polygon(6.5% 0, 93.5% 0, 100% 100%, 0 100%);
+  margin-top: 44vh;
+  position: absolute;
+  height: 3.2vh;
+  width: 83vh;
+  background: linear-gradient(to right, black, transparent, black);
+  overflow: hidden;
+  animation: background_color 12s linear infinite
+}
+
+@keyframes background_color {
+  0% {
+    background-color: magenta;
   }
-  
+
+  50% {
+    background-color: blue;
+  }
+
+  100% {
+    background-color: magenta;
+  }
+
+}
+
+.triangle_bottom--anim {
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  filter: blur(5px);
+  background: linear-gradient(to left, white, transparent);
+  animation: anim_one 12s linear infinite;
+}
+
+@keyframes anim_one {
+  0% {
+    transform: translateX(0%)
+  }
+
+  33% {
+    transform: translateX(100%)
+  }
+
+  65.98% {
+    transform: translateX(100%);
+
+  }
+
+  65.99% {
+    transform: translateX(-100%);
+
+  }
+
+  66% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0%)
+  }
+}
+
+.triangle_bottom--anim_reverse {
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  filter: blur(5px);
+  background: linear-gradient(to left, transparent, white);
+  animation: anim_one_reverse 12s linear infinite;
+}
+
+@keyframes anim_one_reverse {
+  0% {
+    transform: translateX(0%)
+  }
+
+  33% {
+    transform: translateX(-100%)
+  }
+
+  65.98% {
+    transform: translateX(-100%);
+
+  }
+
+  65.99% {
+    transform: translateX(100%);
+
+  }
+
+  66% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0%)
+  }
+}
+
+.front {
+  scale: 0.7;
+  margin-top: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+@media (max-aspect-ratio: 140/87) {
   .front {
-    scale:0.7;
-    margin-top: 5vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
+    scale: 0.5;
+    margin-top: -15vh;
   }
+}
 
-  @media (max-aspect-ratio: 140/87) {
-    .front {
-      scale:0.5;
-      margin-top: -3vh;
-    }
-  }
-  
 
-  @media (max-aspect-ratio: 36/74) {
-    .front {
-      scale:0.4;
-      margin-top: -3vh;
-    }
+@media (max-aspect-ratio: 36/74) {
+  .front {
+    scale: 0.4;
+    margin-top: -15vh;
   }
-  
+}
 
-  @media (max-aspect-ratio: 54/72) {
-    .front {
-      scale:0.4;
-      margin-top: -3vh;
-    }
+
+@media (max-aspect-ratio: 54/72) {
+  .front {
+    scale: 0.4;
+    margin-top: -15vh;
   }
-  
-  .photo {
-    position: absolute;
-    width: 112vh;
-    height: 112vh;
-    background-image: url("assets/face_dark.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
+}
+
+.photo {
+  position: absolute;
+  width: 112vh;
+  height: 112vh;
+  background-image: url("assets/face_dark.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}

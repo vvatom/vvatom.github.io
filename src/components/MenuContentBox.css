@@ -11,6 +11,7 @@
 }
 
 .content_menu_options {
+   -webkit-tap-highlight-color: transparent;
     display: flex;
     column-gap: 14vh;
     text-transform: lowercase;
@@ -35,6 +36,7 @@ text-shadow: 0px 0px 1vh black;
  }
 
 .content_menu_icons {
+   -webkit-tap-highlight-color: transparent;
     display: flex;
     column-gap: 30px;
     margin-top: 2vh;

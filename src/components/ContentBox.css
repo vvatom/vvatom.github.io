@@ -166,6 +166,7 @@ height:1.6vh;
   background: transparent;
   cursor: pointer;
   transition-duration: 0.1s;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .projects_button--left:hover{
@@ -211,6 +212,7 @@ height:1.6vh;
   background: transparent;
   cursor: pointer;
   transition-duration: 0.1s;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .projects_button--right:hover{
